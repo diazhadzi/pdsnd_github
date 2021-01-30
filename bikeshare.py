@@ -9,7 +9,7 @@ CITY_DATA = { 'Chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-
+    NEED TO REWORD THE WAY QUESTIONS ARE BEING ASKED
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -54,7 +54,7 @@ def get_filters():
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
-        
+    ADD AN OPTION TO SEE 5 LINES AT A TIME    
     Args:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
