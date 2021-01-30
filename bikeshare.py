@@ -9,7 +9,7 @@ CITY_DATA = { 'Chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-    NEED TO REWORD THE WAY QUESTIONS ARE BEING ASKED
+    
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -18,7 +18,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True: 
-        city = input("Which city data do you want to explore? Choose Chicago, New York City or Washington. ").title()
+        city = input("From Chicago, New York City or Washington, which city data do you want to explore? ").title()
         if city not in CITY_DATA:
             print("Invalid city. Please choose among Chicago, New York City and Washington. ")
             continue
